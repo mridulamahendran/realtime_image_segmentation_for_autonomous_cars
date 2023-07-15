@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        table {
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <center>
+        <h1>Registration Form</h1>
+        <hr>
+        <br>
+        <table>
+            <form action="" method="GET">
+                <tr>
+                    <td><label for="first_name">First Name:</label></td>
+                    <td><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="">Please select</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="interests">Interests:</label></td>
+                    <td>
+                        <input type="checkbox" id="programming" name="interests[]" value="programming">
+                        <label for="programming">Programming</label><br>
+                        <input type="checkbox" id="design" name="interests[]" value="design">
+                        <label for="design">Design</label><br>
+                        <input type="checkbox" id="marketing" name="interests[]" value="marketing">
+                        <label for="marketing">Marketing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label><br></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+</html>
+
+
+
+
